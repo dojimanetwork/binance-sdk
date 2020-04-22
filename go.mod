@@ -1,6 +1,7 @@
 module gitlab.com/thorchain/binance-sdk
 
 require (
+	github.com/binance-chain/go-sdk v0.0.0-00010101000000-000000000000
 	github.com/binance-chain/ledger-cosmos-go v0.9.9-binance.1
 	github.com/btcsuite/btcd v0.20.1-beta
 	github.com/btcsuite/btcutil v0.0.0-20190425235716-9e5f4b9a998d
@@ -11,8 +12,6 @@ require (
 	github.com/tendermint/btcd v0.0.0-20180816174608-e5840949ff4f
 	github.com/tendermint/go-amino v0.14.1
 	github.com/tendermint/tendermint v0.33.3
-	github.com/zondax/hid v0.9.0 // indirect
-	github.com/zondax/ledger-go v0.9.0 // indirect
 	golang.org/x/crypto v0.0.0-20191206172530-e9b2fee46413
 	gopkg.in/resty.v1 v1.12.0
 )
@@ -20,6 +19,7 @@ require (
 replace github.com/tendermint/go-amino => github.com/binance-chain/bnc-go-amino v0.14.1-binance.1
 
 replace github.com/zondax/ledger-go => github.com/binance-chain/ledger-go v0.9.1
-replace github.com/binance-chain/go-sdk => gitlab.com/thorchain/binance-sdk
+
+replace github.com/binance-chain/go-sdk => ../binance-sdk
 
 go 1.13
