@@ -1,3 +1,5 @@
+**Fork of https://github.com/binance-chain/go-sdk**
+
 # BNC Chain Go SDK
 
 
