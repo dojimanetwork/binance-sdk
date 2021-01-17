@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/binance-chain/go-sdk/common/types"
+	"gitlab.com/thorchain/binance-sdk/common/types"
 )
 
 // Order routes

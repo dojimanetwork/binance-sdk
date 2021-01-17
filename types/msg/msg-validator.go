@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/binance-chain/go-sdk/common/types"
 	"github.com/tendermint/tendermint/crypto"
+	"gitlab.com/thorchain/binance-sdk/common/types"
 )
 
 // Description - description fields for a validator

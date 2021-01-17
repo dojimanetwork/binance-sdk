@@ -3,7 +3,7 @@ package websocket
 import (
 	"encoding/json"
 
-	"github.com/binance-chain/go-sdk/common/types"
+	"gitlab.com/thorchain/binance-sdk/common/types"
 )
 
 //

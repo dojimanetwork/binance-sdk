@@ -1,8 +1,8 @@
 package query
 
 import (
-	"github.com/binance-chain/go-sdk/client/basic"
-	"github.com/binance-chain/go-sdk/common/types"
+	"gitlab.com/thorchain/binance-sdk/client/basic"
+	"gitlab.com/thorchain/binance-sdk/common/types"
 )
 
 type QueryClient interface {

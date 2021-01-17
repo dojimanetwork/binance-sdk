@@ -1,6 +1,6 @@
 package rpc
 
-import "github.com/binance-chain/go-sdk/common/types"
+import "gitlab.com/thorchain/binance-sdk/common/types"
 
 type OpsClient interface {
 	IsActive() bool

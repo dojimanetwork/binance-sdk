@@ -1,13 +1,13 @@
 package mock
 
 import (
-	"github.com/binance-chain/go-sdk/client/rpc"
 	abci "github.com/tendermint/tendermint/abci/types"
 	libbytes "github.com/tendermint/tendermint/libs/bytes"
 	"github.com/tendermint/tendermint/proxy"
 	"github.com/tendermint/tendermint/rpc/client"
 	ctypes "github.com/tendermint/tendermint/rpc/core/types"
 	"github.com/tendermint/tendermint/types"
+	"gitlab.com/thorchain/binance-sdk/client/rpc"
 )
 
 // ABCIApp will send all abci related request to the named app,

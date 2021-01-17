@@ -3,7 +3,7 @@ package types
 import (
 	"errors"
 
-	"github.com/binance-chain/go-sdk/common"
+	"gitlab.com/thorchain/binance-sdk/common"
 )
 
 const (

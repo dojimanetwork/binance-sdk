@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"strings"
 
+	libbytes "github.com/tendermint/tendermint/libs/bytes"
 	"github.com/tendermint/tendermint/types"
 )
 

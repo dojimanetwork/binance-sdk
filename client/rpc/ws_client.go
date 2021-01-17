@@ -21,11 +21,11 @@ import (
 	libservice "github.com/tendermint/tendermint/libs/service"
 	"github.com/tendermint/tendermint/rpc/client"
 	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctypes "github.com/tendermint/tendermint/rpc/lib/types"
+	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 	"github.com/tendermint/tendermint/types"
 
-	"github.com/binance-chain/go-sdk/common/uuid"
-	"github.com/binance-chain/go-sdk/types/tx"
+	"gitlab.com/thorchain/binance-sdk/common/uuid"
+	"gitlab.com/thorchain/binance-sdk/types/tx"
 )
 
 const (
@@ -683,7 +683,7 @@ func (c *WSClient) Call(ctx context.Context, method string, id rpctypes.JSONRPCS
 	if !c.IsActive() {
 		return errors.New("websocket client is dialing or stopped, can't send any request")
 	}
-	request, err := rpctypes.MapToRequest(c.cdc, id, method, params)
+	request, err := rpctypes.MapToRequest(id, method, params)
 	if err != nil {
 		return err
 	}
