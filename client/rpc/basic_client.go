@@ -6,16 +6,15 @@ import (
 
 	"github.com/pkg/errors"
 
+	"github.com/tendermint/go-amino"
 	libbytes "github.com/tendermint/tendermint/libs/bytes"
 	libservice "github.com/tendermint/tendermint/libs/service"
 	"github.com/tendermint/tendermint/rpc/client"
 	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpcclient "github.com/tendermint/tendermint/rpc/lib/client"
 	"github.com/tendermint/tendermint/types"
 
-	ntypes "github.com/binance-chain/go-sdk/common/types"
-	"github.com/binance-chain/go-sdk/keys"
-	"github.com/binance-chain/go-sdk/types/tx"
+	ntypes "gitlab.com/thorchain/binance-sdk/common/types"
+	"gitlab.com/thorchain/binance-sdk/keys"
 )
 
 var DefaultTimeout = 5 * time.Second
@@ -73,13 +72,15 @@ type HTTP struct {
 // NewHTTP takes a remote endpoint in the form tcp://<host>:<port>
 // and the websocket path (which always seems to be "/websocket")
 func NewHTTP(remote, wsEndpoint string) *HTTP {
-	rc := rpcclient.NewJSONRPCClient(remote)
-	cdc := rc.Codec()
-	ctypes.RegisterAmino(cdc)
-	ntypes.RegisterWire(cdc)
-	tx.RegisterCodec(cdc)
+	// rc, _ := rpcclient.New(remote)
+	cdc := amino.NewCodec()
+	/*
+		ctypes.RegisterAmino(cdc)
+		ntypes.RegisterWire(cdc)
+		tx.RegisterCodec(cdc)
 
-	rc.SetCodec(cdc)
+		rc.SetCodec(cdc)
+	*/
 	wsEvent := newWSEvents(cdc, remote, wsEndpoint)
 	client := &HTTP{
 		WSEvents: wsEvent,

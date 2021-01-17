@@ -1,9 +1,9 @@
 package transaction
 
 import (
-	"github.com/binance-chain/go-sdk/common/types"
-	"github.com/binance-chain/go-sdk/types/msg"
-	"github.com/binance-chain/go-sdk/types/tx"
+	"gitlab.com/thorchain/binance-sdk/common/types"
+	"gitlab.com/thorchain/binance-sdk/types/msg"
+	"gitlab.com/thorchain/binance-sdk/types/tx"
 )
 
 type SendTokenResult struct {

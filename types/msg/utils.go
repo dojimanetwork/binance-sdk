@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/binance-chain/go-sdk/common/types"
 	"github.com/tendermint/tendermint/crypto/tmhash"
+	"gitlab.com/thorchain/binance-sdk/common/types"
 )
 
 // SortJSON takes any JSON and returns it sorted by keys. Also, all white-spaces

@@ -1,11 +1,10 @@
 package rpc
 
 import (
-	"github.com/binance-chain/go-sdk/types/tx"
 	"github.com/tendermint/tendermint/abci/types"
 	libbytes "github.com/tendermint/tendermint/libs/bytes"
-	libkv "github.com/tendermint/tendermint/libs/kv"
 	abci "github.com/tendermint/tendermint/types"
+	"gitlab.com/thorchain/binance-sdk/types/tx"
 )
 
 type ResultBroadcastTxCommit struct {
@@ -25,15 +24,15 @@ func (r *ResultBroadcastTxCommit) complement() {
 }
 
 type ResponseCheckTx struct {
-	Code      uint32         `json:"code,omitempty"`
-	Data      []byte         `json:"data,omitempty"`
-	Log       string         `json:"log,omitempty"`
-	Info      string         `json:"info,omitempty"`
-	GasWanted int64          `json:"gas_wanted,omitempty"`
-	GasUsed   int64          `json:"gas_used,omitempty"`
-	Events    []types.Event  `json:"events,omitempty"`
-	Tags      []libkv.KVPair `json:"tags,omitempty"`
-	Codespace string         `json:"codespace,omitempty"`
+	Code      uint32                 `json:"code,omitempty"`
+	Data      []byte                 `json:"data,omitempty"`
+	Log       string                 `json:"log,omitempty"`
+	Info      string                 `json:"info,omitempty"`
+	GasWanted int64                  `json:"gas_wanted,omitempty"`
+	GasUsed   int64                  `json:"gas_used,omitempty"`
+	Events    []types.Event          `json:"events,omitempty"`
+	Tags      []types.EventAttribute `json:"tags,omitempty"`
+	Codespace string                 `json:"codespace,omitempty"`
 }
 
 func (r *ResponseCheckTx) complement() {
@@ -45,15 +44,15 @@ func (r *ResponseCheckTx) complement() {
 }
 
 type ResponseDeliverTx struct {
-	Code      uint32         `json:"code,omitempty"`
-	Data      []byte         `json:"data,omitempty"`
-	Log       string         `json:"log,omitempty"`
-	Info      string         `json:"info,omitempty"`
-	GasWanted int64          `json:"gas_wanted,omitempty"`
-	GasUsed   int64          `json:"gas_used,omitempty"`
-	Events    []types.Event  `json:"events,omitempty"`
-	Tags      []libkv.KVPair `json:"tags,omitempty"`
-	Codespace string         `json:"codespace,omitempty"`
+	Code      uint32                 `json:"code,omitempty"`
+	Data      []byte                 `json:"data,omitempty"`
+	Log       string                 `json:"log,omitempty"`
+	Info      string                 `json:"info,omitempty"`
+	GasWanted int64                  `json:"gas_wanted,omitempty"`
+	GasUsed   int64                  `json:"gas_used,omitempty"`
+	Events    []types.Event          `json:"events,omitempty"`
+	Tags      []types.EventAttribute `json:"tags,omitempty"`
+	Codespace string                 `json:"codespace,omitempty"`
 }
 
 func (r *ResponseDeliverTx) complement() {
@@ -97,7 +96,7 @@ type ResponseEndBlock struct {
 	ValidatorUpdates      []types.ValidatorUpdate `json:"validator_updates"`
 	ConsensusParamUpdates *types.ConsensusParams  `json:"consensus_param_updates,omitempty"`
 	Events                []types.Event           `json:"events,omitempty"`
-	Tags                  []libkv.KVPair          `json:"tags,omitempty"`
+	Tags                  []types.EventAttribute  `json:"tags,omitempty"`
 }
 
 func (r *ResponseEndBlock) complement() {
@@ -109,8 +108,8 @@ func (r *ResponseEndBlock) complement() {
 }
 
 type ResponseBeginBlock struct {
-	Events []types.Event  `json:"events,omitempty"`
-	Tags   []libkv.KVPair `json:"tags,omitempty"`
+	Events []types.Event          `json:"events,omitempty"`
+	Tags   []types.EventAttribute `json:"tags,omitempty"`
 }
 
 func (r *ResponseBeginBlock) complement() {

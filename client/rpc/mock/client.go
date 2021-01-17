@@ -1,9 +1,10 @@
 package mock
 
 import (
+	"context"
 	"reflect"
 
-	"github.com/binance-chain/go-sdk/client/rpc"
+	"gitlab.com/thorchain/binance-sdk/client/rpc"
 
 	libbytes "github.com/tendermint/tendermint/libs/bytes"
 	"github.com/tendermint/tendermint/libs/log"
@@ -11,7 +12,7 @@ import (
 	"github.com/tendermint/tendermint/rpc/client"
 	"github.com/tendermint/tendermint/rpc/core"
 	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctypes "github.com/tendermint/tendermint/rpc/lib/types"
+	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 	"github.com/tendermint/tendermint/types"
 )
 
@@ -68,7 +69,7 @@ func (c Call) GetResponse(args interface{}) (interface{}, error) {
 	return nil, c.Error
 }
 
-func (c Client) Status() (*ctypes.ResultStatus, error) {
+func (c Client) Status(ctx context.Context) (*ctypes.ResultStatus, error) {
 	return core.Status(&rpctypes.Context{})
 }
 
@@ -112,11 +113,11 @@ func (c Client) Health() (*ctypes.ResultHealth, error) {
 	return core.Health(&rpctypes.Context{})
 }
 
-func (c Client) BlockchainInfo(minHeight, maxHeight int64) (*ctypes.ResultBlockchainInfo, error) {
+func (c Client) BlockchainInfo(ctx context.Context, minHeight, maxHeight int64) (*ctypes.ResultBlockchainInfo, error) {
 	return core.BlockchainInfo(&rpctypes.Context{}, minHeight, maxHeight)
 }
 
-func (c Client) Genesis() (*ctypes.ResultGenesis, error) {
+func (c Client) Genesis(ctx context.Context) (*ctypes.ResultGenesis, error) {
 	return core.Genesis(&rpctypes.Context{})
 }
 
@@ -129,7 +130,8 @@ func (c Client) Commit(height *int64) (*ctypes.ResultCommit, error) {
 }
 
 func (c Client) Validators(height *int64) (*ctypes.ResultValidators, error) {
-	return core.Validators(&rpctypes.Context{}, height)
+	i := int(0)
+	return core.Validators(&rpctypes.Context{}, height, &i, &i)
 }
 
 func (c Client) SetLogger(log.Logger) {

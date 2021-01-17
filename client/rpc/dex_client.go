@@ -4,13 +4,13 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/binance-chain/go-sdk/common"
-	"github.com/binance-chain/go-sdk/common/types"
-	"github.com/binance-chain/go-sdk/keys"
-	gtypes "github.com/binance-chain/go-sdk/types"
-	"github.com/binance-chain/go-sdk/types/msg"
-	"github.com/binance-chain/go-sdk/types/tx"
 	core_types "github.com/tendermint/tendermint/rpc/core/types"
+	"gitlab.com/thorchain/binance-sdk/common"
+	"gitlab.com/thorchain/binance-sdk/common/types"
+	"gitlab.com/thorchain/binance-sdk/keys"
+	gtypes "gitlab.com/thorchain/binance-sdk/types"
+	"gitlab.com/thorchain/binance-sdk/types/msg"
+	"gitlab.com/thorchain/binance-sdk/types/tx"
 )
 
 type SyncType int
