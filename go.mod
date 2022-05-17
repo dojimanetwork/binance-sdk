@@ -1,4 +1,4 @@
-module gitlab.com/thorchain/binance-sdk
+module github.com/dojimanetwork/binance-sdk
 
 require (
 	github.com/binance-chain/ledger-cosmos-go v0.9.9-binance.1

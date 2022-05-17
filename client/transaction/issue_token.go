@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"gitlab.com/thorchain/binance-sdk/types/msg"
-	"gitlab.com/thorchain/binance-sdk/types/tx"
+	"github.com/dojimanetwork/binance-sdk/types/msg"
+	"github.com/dojimanetwork/binance-sdk/types/tx"
 )
 
 type IssueTokenResult struct {

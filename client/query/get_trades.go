@@ -3,8 +3,8 @@ package query
 import (
 	"encoding/json"
 
-	"gitlab.com/thorchain/binance-sdk/common"
-	"gitlab.com/thorchain/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/common"
+	"github.com/dojimanetwork/binance-sdk/common/types"
 )
 
 // GetTrades returns transaction details

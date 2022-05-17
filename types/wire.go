@@ -3,8 +3,8 @@ package types
 import (
 	"github.com/tendermint/go-amino"
 
-	ntypes "gitlab.com/thorchain/binance-sdk/common/types"
-	"gitlab.com/thorchain/binance-sdk/types/tx"
+	ntypes "github.com/dojimanetwork/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/types/tx"
 )
 
 func NewCodec() *amino.Codec {

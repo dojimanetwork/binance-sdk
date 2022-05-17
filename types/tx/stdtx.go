@@ -1,7 +1,7 @@
 package tx
 
 import (
-	"gitlab.com/thorchain/binance-sdk/types/msg"
+	"github.com/dojimanetwork/binance-sdk/types/msg"
 )
 
 const Source int64 = 0

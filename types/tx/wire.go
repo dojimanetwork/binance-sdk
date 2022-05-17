@@ -7,7 +7,7 @@ import (
 	"github.com/tendermint/tendermint/crypto/secp256k1"
 	"github.com/tendermint/tendermint/crypto/sr25519"
 
-	"gitlab.com/thorchain/binance-sdk/types/msg"
+	"github.com/dojimanetwork/binance-sdk/types/msg"
 )
 
 // cdc global variable

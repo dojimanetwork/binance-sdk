@@ -15,11 +15,11 @@ import (
 	tmquery "github.com/tendermint/tendermint/libs/pubsub/query"
 	"github.com/tendermint/tendermint/types"
 
-	"gitlab.com/thorchain/binance-sdk/client/rpc"
-	"gitlab.com/thorchain/binance-sdk/client/transaction"
-	ctypes "gitlab.com/thorchain/binance-sdk/common/types"
-	"gitlab.com/thorchain/binance-sdk/keys"
-	"gitlab.com/thorchain/binance-sdk/types/msg"
+	"github.com/dojimanetwork/binance-sdk/client/rpc"
+	"github.com/dojimanetwork/binance-sdk/client/transaction"
+	ctypes "github.com/dojimanetwork/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/keys"
+	"github.com/dojimanetwork/binance-sdk/types/msg"
 )
 
 var (

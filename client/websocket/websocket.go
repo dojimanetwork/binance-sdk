@@ -1,7 +1,7 @@
 package websocket
 
 import (
-	"gitlab.com/thorchain/binance-sdk/client/basic"
+	"github.com/dojimanetwork/binance-sdk/client/basic"
 )
 
 type WSClient interface {

@@ -11,9 +11,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	ctypes "gitlab.com/thorchain/binance-sdk/common/types"
-	"gitlab.com/thorchain/binance-sdk/types/msg"
-	"gitlab.com/thorchain/binance-sdk/types/tx"
+	ctypes "github.com/dojimanetwork/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/types/msg"
+	"github.com/dojimanetwork/binance-sdk/types/tx"
 )
 
 func TestRecoveryFromKeyWordsNoError(t *testing.T) {

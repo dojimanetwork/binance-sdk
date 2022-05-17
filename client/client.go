@@ -3,12 +3,12 @@ package client
 import (
 	"gopkg.in/resty.v1"
 
-	"gitlab.com/thorchain/binance-sdk/client/basic"
-	"gitlab.com/thorchain/binance-sdk/client/query"
-	"gitlab.com/thorchain/binance-sdk/client/transaction"
-	"gitlab.com/thorchain/binance-sdk/client/websocket"
-	"gitlab.com/thorchain/binance-sdk/common/types"
-	"gitlab.com/thorchain/binance-sdk/keys"
+	"github.com/dojimanetwork/binance-sdk/client/basic"
+	"github.com/dojimanetwork/binance-sdk/client/query"
+	"github.com/dojimanetwork/binance-sdk/client/transaction"
+	"github.com/dojimanetwork/binance-sdk/client/websocket"
+	"github.com/dojimanetwork/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/keys"
 )
 
 // dexClient wrapper

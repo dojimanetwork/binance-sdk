@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/dojimanetwork/binance-sdk/common/types"
 	"github.com/pkg/errors"
 	"github.com/tendermint/go-amino"
-	"gitlab.com/thorchain/binance-sdk/common/types"
 )
 
 // name to idetify transaction types

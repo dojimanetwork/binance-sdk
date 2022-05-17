@@ -6,20 +6,20 @@ import (
 	"testing"
 	time2 "time"
 
+	"github.com/dojimanetwork/binance-sdk/client/rpc"
 	"github.com/tendermint/tendermint/crypto"
-	"gitlab.com/thorchain/binance-sdk/client/rpc"
 
 	"github.com/stretchr/testify/assert"
 
 	"github.com/tendermint/tendermint/types/time"
 
-	sdk "gitlab.com/thorchain/binance-sdk/client"
-	"gitlab.com/thorchain/binance-sdk/client/transaction"
-	"gitlab.com/thorchain/binance-sdk/common"
-	ctypes "gitlab.com/thorchain/binance-sdk/common/types"
-	"gitlab.com/thorchain/binance-sdk/keys"
-	"gitlab.com/thorchain/binance-sdk/types/msg"
-	txtype "gitlab.com/thorchain/binance-sdk/types/tx"
+	sdk "github.com/dojimanetwork/binance-sdk/client"
+	"github.com/dojimanetwork/binance-sdk/client/transaction"
+	"github.com/dojimanetwork/binance-sdk/common"
+	ctypes "github.com/dojimanetwork/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/keys"
+	"github.com/dojimanetwork/binance-sdk/types/msg"
+	txtype "github.com/dojimanetwork/binance-sdk/types/tx"
 )
 
 // After bnbchain integration_test.sh has runned

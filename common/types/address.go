@@ -6,8 +6,8 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/dojimanetwork/binance-sdk/common/bech32"
 	"github.com/tendermint/tendermint/crypto"
-	"gitlab.com/thorchain/binance-sdk/common/bech32"
 )
 
 // AccAddress a wrapper around bytes meant to represent an account address.

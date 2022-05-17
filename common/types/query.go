@@ -3,7 +3,7 @@ package types
 import (
 	"errors"
 
-	"gitlab.com/thorchain/binance-sdk/common"
+	"github.com/dojimanetwork/binance-sdk/common"
 )
 
 const (

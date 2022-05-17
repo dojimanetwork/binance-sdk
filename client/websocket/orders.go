@@ -3,7 +3,7 @@ package websocket
 import (
 	"encoding/json"
 
-	"gitlab.com/thorchain/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/common/types"
 )
 
 type OrderEvent struct {

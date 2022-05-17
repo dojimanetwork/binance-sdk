@@ -3,9 +3,9 @@ package transaction
 import (
 	"fmt"
 
-	"gitlab.com/thorchain/binance-sdk/common"
-	"gitlab.com/thorchain/binance-sdk/types/msg"
-	"gitlab.com/thorchain/binance-sdk/types/tx"
+	"github.com/dojimanetwork/binance-sdk/common"
+	"github.com/dojimanetwork/binance-sdk/types/msg"
+	"github.com/dojimanetwork/binance-sdk/types/tx"
 )
 
 type CancelOrderResult struct {

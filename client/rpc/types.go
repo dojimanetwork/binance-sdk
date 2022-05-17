@@ -1,10 +1,10 @@
 package rpc
 
 import (
+	"github.com/dojimanetwork/binance-sdk/types/tx"
 	"github.com/tendermint/tendermint/abci/types"
 	libbytes "github.com/tendermint/tendermint/libs/bytes"
 	abci "github.com/tendermint/tendermint/types"
-	"gitlab.com/thorchain/binance-sdk/types/tx"
 )
 
 type ResultBroadcastTxCommit struct {

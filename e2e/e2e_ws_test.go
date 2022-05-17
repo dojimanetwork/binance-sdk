@@ -8,11 +8,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	sdk "gitlab.com/thorchain/binance-sdk/client"
-	"gitlab.com/thorchain/binance-sdk/client/websocket"
-	ctypes "gitlab.com/thorchain/binance-sdk/common/types"
-	"gitlab.com/thorchain/binance-sdk/keys"
-	"gitlab.com/thorchain/binance-sdk/types"
+	sdk "github.com/dojimanetwork/binance-sdk/client"
+	"github.com/dojimanetwork/binance-sdk/client/websocket"
+	ctypes "github.com/dojimanetwork/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/keys"
+	"github.com/dojimanetwork/binance-sdk/types"
 )
 
 func NewClient(t *testing.T) sdk.DexClient {

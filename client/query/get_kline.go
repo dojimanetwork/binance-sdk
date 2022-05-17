@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"gitlab.com/thorchain/binance-sdk/common"
-	"gitlab.com/thorchain/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/common"
+	"github.com/dojimanetwork/binance-sdk/common/types"
 )
 
 // GetKlines returns transaction details

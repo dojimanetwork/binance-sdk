@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"gitlab.com/thorchain/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/common/types"
 )
 
 // GetAccount returns list of trading pairs

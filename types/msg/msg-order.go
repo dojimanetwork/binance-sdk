@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"gitlab.com/thorchain/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/common/types"
 )
 
 // Order routes

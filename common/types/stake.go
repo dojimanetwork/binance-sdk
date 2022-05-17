@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/dojimanetwork/binance-sdk/common/bech32"
 	"github.com/tendermint/tendermint/crypto"
-	"gitlab.com/thorchain/binance-sdk/common/bech32"
 )
 
 type ValAddress []byte

@@ -1,6 +1,6 @@
 package rpc
 
-import "gitlab.com/thorchain/binance-sdk/common/types"
+import "github.com/dojimanetwork/binance-sdk/common/types"
 
 type OpsClient interface {
 	IsActive() bool

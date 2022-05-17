@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"time"
 
-	"gitlab.com/thorchain/binance-sdk/client/basic"
-	"gitlab.com/thorchain/binance-sdk/client/query"
-	"gitlab.com/thorchain/binance-sdk/common/types"
-	"gitlab.com/thorchain/binance-sdk/keys"
-	"gitlab.com/thorchain/binance-sdk/types/msg"
-	"gitlab.com/thorchain/binance-sdk/types/tx"
+	"github.com/dojimanetwork/binance-sdk/client/basic"
+	"github.com/dojimanetwork/binance-sdk/client/query"
+	"github.com/dojimanetwork/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/keys"
+	"github.com/dojimanetwork/binance-sdk/types/msg"
+	"github.com/dojimanetwork/binance-sdk/types/tx"
 )
 
 type Option = tx.Option

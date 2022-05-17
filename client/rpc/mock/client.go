@@ -4,7 +4,7 @@ import (
 	"context"
 	"reflect"
 
-	"gitlab.com/thorchain/binance-sdk/client/rpc"
+	"github.com/dojimanetwork/binance-sdk/client/rpc"
 
 	libbytes "github.com/tendermint/tendermint/libs/bytes"
 	"github.com/tendermint/tendermint/libs/log"

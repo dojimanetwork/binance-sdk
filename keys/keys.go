@@ -14,13 +14,13 @@ import (
 
 	"github.com/tendermint/tendermint/crypto/secp256k1"
 
+	"github.com/dojimanetwork/binance-sdk/common"
+	"github.com/dojimanetwork/binance-sdk/common/ledger"
+	"github.com/dojimanetwork/binance-sdk/common/types"
+	ctypes "github.com/dojimanetwork/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/common/uuid"
+	"github.com/dojimanetwork/binance-sdk/types/tx"
 	"github.com/tendermint/tendermint/crypto"
-	"gitlab.com/thorchain/binance-sdk/common"
-	"gitlab.com/thorchain/binance-sdk/common/ledger"
-	"gitlab.com/thorchain/binance-sdk/common/types"
-	ctypes "gitlab.com/thorchain/binance-sdk/common/types"
-	"gitlab.com/thorchain/binance-sdk/common/uuid"
-	"gitlab.com/thorchain/binance-sdk/types/tx"
 )
 
 const (

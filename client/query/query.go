@@ -1,8 +1,8 @@
 package query
 
 import (
-	"gitlab.com/thorchain/binance-sdk/client/basic"
-	"gitlab.com/thorchain/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/client/basic"
+	"github.com/dojimanetwork/binance-sdk/common/types"
 )
 
 type QueryClient interface {

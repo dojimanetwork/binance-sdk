@@ -24,8 +24,8 @@ import (
 	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 	"github.com/tendermint/tendermint/types"
 
-	"gitlab.com/thorchain/binance-sdk/common/uuid"
-	"gitlab.com/thorchain/binance-sdk/types/tx"
+	"github.com/dojimanetwork/binance-sdk/common/uuid"
+	"github.com/dojimanetwork/binance-sdk/types/tx"
 )
 
 const (

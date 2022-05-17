@@ -3,9 +3,9 @@ package query
 import (
 	"encoding/json"
 
-	"gitlab.com/thorchain/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/common/types"
 
-	"gitlab.com/thorchain/binance-sdk/common"
+	"github.com/dojimanetwork/binance-sdk/common"
 )
 
 // GetTicker24h returns ticker 24h

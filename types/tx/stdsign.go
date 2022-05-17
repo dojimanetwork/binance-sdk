@@ -3,8 +3,8 @@ package tx
 import (
 	"encoding/json"
 
+	"github.com/dojimanetwork/binance-sdk/types/msg"
 	"github.com/tendermint/tendermint/crypto"
-	"gitlab.com/thorchain/binance-sdk/types/msg"
 )
 
 // StdSignDoc def

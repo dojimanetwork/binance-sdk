@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strconv"
 
-	"gitlab.com/thorchain/binance-sdk/client"
-	"gitlab.com/thorchain/binance-sdk/common/ledger"
-	"gitlab.com/thorchain/binance-sdk/common/types"
-	"gitlab.com/thorchain/binance-sdk/keys"
-	"gitlab.com/thorchain/binance-sdk/types/msg"
+	"github.com/dojimanetwork/binance-sdk/client"
+	"github.com/dojimanetwork/binance-sdk/common/ledger"
+	"github.com/dojimanetwork/binance-sdk/common/types"
+	"github.com/dojimanetwork/binance-sdk/keys"
+	"github.com/dojimanetwork/binance-sdk/types/msg"
 )
 
 // To run this example, please make sure your key address have more than 1:BNB on testnet
